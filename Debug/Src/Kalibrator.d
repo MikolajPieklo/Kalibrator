@@ -32,7 +32,8 @@ Src/Kalibrator.o: ../Src/Kalibrator.c \
  C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_spi_ex.h \
  C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim.h \
  C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim_ex.h \
- C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_uart.h
+ C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_uart.h \
+ C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Inc/gpio.h
 
 C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Inc/Kalibrator.h:
 
@@ -101,3 +102,5 @@ C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm
 C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_tim_ex.h:
 
 C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Drivers/STM32L1xx_HAL_Driver/Inc/stm32l1xx_hal_uart.h:
+
+C:/Programy_Keil/Kalibrator\ STM/Kalibrator/Inc/gpio.h:

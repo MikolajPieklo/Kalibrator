@@ -9,17 +9,26 @@
 #include "stm32l151xc.h"
 #include "Modbus.h"
 #include "spi.h"
+#include "gpio.h"
 //#include "stm32l1xx_hal_gpio.h"
 
 void PK_ON_A(void)
 {
-	HAL_GPIO_WritePin(GPIOD,0x4000,1); //PD14
-	HAL_GPIO_WritePin(GPIOD,0x8000,0); //PD15
+	MX_GPIO_Init();
+	HAL_GPIO_WritePin(PK_ON_A_GPIO_Port,PK_ON_A_Pin,1); //PD14
+	HAL_GPIO_WritePin(PK_ON_B_GPIO_Port,PK_ON_B_Pin,0); //PD15
+	HAL_Delay(10);
+	HAL_GPIO_DeInit(PK_ON_A_GPIO_Port,PK_ON_A_Pin);
+	HAL_GPIO_DeInit(PK_ON_B_GPIO_Port,PK_ON_B_Pin);
 }
 void PK_ON_B(void)
 {
-	HAL_GPIO_WritePin(GPIOD,0x4000U,0); //PD14
-	HAL_GPIO_WritePin(GPIOD,0x8000U,1); //PD15
+	MX_GPIO_Init();
+	HAL_GPIO_WritePin(PK_ON_A_GPIO_Port,PK_ON_A_Pin,0); //PD14
+	HAL_GPIO_WritePin(PK_ON_B_GPIO_Port,PK_ON_B_Pin,1); //PD15
+	HAL_Delay(10);
+	HAL_GPIO_DeInit(PK_ON_A_GPIO_Port,PK_ON_A_Pin);
+	HAL_GPIO_DeInit(PK_ON_B_GPIO_Port,PK_ON_B_Pin);
 }
 
 void Init_Kalibrator(void)
